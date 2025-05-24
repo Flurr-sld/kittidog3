@@ -38,9 +38,9 @@ async def kitty(message: Message) -> None:
 @dp.message()
 async def echo_handler(message: Message) -> None:
     try:
-        await message.answer("Я умею только отправлять картинки с котятами по команде /kitty")
+        await message.answer("Я умею только отправлять картинки с котятами и щенятами по командам /kitty и /puppy")
     except TypeError:
-        await message.answer("Я умею только отправлять картинки с котятами по команде /kitty")
+        await message.answer("Я умею только отправлять картинки с котятами и щенятами по командам /kitty и /puppy")
 
 
 async def main() -> None:
